@@ -1,6 +1,7 @@
 {
   "name": "@repo/db",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "db:migrate:deploy": "npx prisma migrate deploy",
     "db:migrate:dev": "npx prisma migrate dev",
@@ -19,7 +20,8 @@
   },
   "devDependencies": {
     "prisma": "^5.18.0",
-    "tsup": "^8.2.4"
+    "tsup": "^8.2.4",
+    "@repo/typescript-config": "workspace:*"
   },
   "exports": {
     ".": "./src/index.ts"
